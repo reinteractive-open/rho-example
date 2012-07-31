@@ -1,0 +1,24 @@
+#sdk: "/Users/wiseleyb/.rbenv/versions/1.9.3-p125/lib/ruby/gems/1.9.1/gems/rhodes-3.3.3"
+sdkversion: 3.3.3
+name: rho-mobile-example
+version: 1.0
+vendor: rhomobile
+build: debug
+bbver: 4.6
+applog: rholog.txt
+iphone:
+  configuration: Release
+  sdk: iphonesimulator4.3
+  provisionprofile:
+  codesignidentity:
+  entitlements:
+  BundleIdentifier: com.rhomobile.rho-mobile-example
+  BundleURLScheme: rho-mobile-example
+wp:
+  productid: '0451c190-bd66-012f-ba77-0023dffedcde'
+symbian:
+  uid: '0xef12bf15'
+android:
+  version: 2.1
+
+extensions: ["json", "another-extension"]

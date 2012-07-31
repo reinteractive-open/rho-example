@@ -1,0 +1,18 @@
+:sources: 
+
+:development:
+  :licensefile: settings/license.key
+  :redis: localhost:6379
+  :syncserver: http://localhost:9292/api/application/
+  :push_server: http://appname:secret@localhost:8675/
+  :api_token: d630de69ceef409f8e731d13d2ccfc31
+:test:
+  :licensefile: settings/license.key
+  :redis: localhost:6379
+  :syncserver: http://localhost:9292/api/application/
+  :push_server: http://appname:secret@localhost:8675/
+:production: 
+  :licensefile: settings/license.key
+  :redis: localhost:6379
+  :syncserver: http://localhost:9292/api/application/
+  :push_server: http://appname:secret@localhost:8675/
