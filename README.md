@@ -1,12 +1,83 @@
 # Rhomobile Example Apps
 
-Rhomobile is an open source platform/framework that allows you to "easily" develop native code for a wide range of mobile devices.
+This is a branch off of <https://github.com/reinteractive-open/rho-example/>
 
-Getting all the moving parts working is a challenge.  Their eBook on it is out of date, and piecing together all the documentation (which is excellent) is time consuming.
+## Hello World
 
-This project is a hello-world for rhomobile.  It currently contains:
+***branch*** <https://github.com/reinteractive-open/rho-example/tree/feature/example-01-hello-world>
 
-* ***rho-rails-example*** A sample rails application which serves as an API for the mobile device and rho-connect
-* ***rho-connect-example*** Rhomobile uses Rhoconnect to manage data exchanges between the mobile device and rails.  It basically does a bunch of caching and polling via redis and resque to make things work smoothly.
-* ***rho-mobile-example*** A sample iPhone app that currently manages products and logins.  
+This branch does the absolute basics.  It allows you to manage Products.  The authentication is "true" meaning you can login in with whatever you like.
+
+***To Use***
+
+	git clone git://github.com/reinteractive-open/rho-example.git
+	cd rho-example
+	git checkout --track -b feature/example-01-hello-world origin/feature/example-01-hello-world
+
+## Setup
+
+### Install Rho
+
+		#!/bin/bash
+
+		make > /dev/null 2> /dev/null
+
+		if [ $? != 2 ]
+		then
+		  echo 'Please install building tools'
+		  exit;
+		fi
+
+		java 1> /dev/null 2> /dev/null
+
+		if [ $? != 0 ]
+		then
+		  echo 'Please install java development kit'
+		  exit;
+		fi
+
+		echo "Install rhomobile debugger"
+		sudo gem install rhomobile-debug
+
+		echo "Install rhodes gem"
+		sudo gem install rhodes
+
+		echo "Install rhoconnect gem"
+		sudo gem install rhoconnect
+
+		echo "Install rhoconnect adapters gem"
+		sudo gem install rhoconnect-adapters
+
+		echo "Install rhodes translator gem"
+		sudo gem install rhodes-translator
+
+### Follow README.md for each of the projects
+* Follow README.md for rho-connect-example
+* Follow README.md for rho-rails-example
+* Follow README.md for rho-mobile-example
+
+## If everything goes well you should have…
+
+### rho-connect-example
+
+![rho-connect-example](https://github.com/reinteractive-open/rho-example/raw/feature/example-01-hello-world/screen_shots/Screen%20Shot%202012-08-01%20at%205.21.53%20AM.png)
+
+### rho-rails-example
+
+![rho-rails-example](https://github.com/reinteractive-open/rho-example/raw/feature/example-01-hello-world/screen_shots/Screen%20Shot%202012-08-01%20at%205.21.39%20AM.png)
+
+### rho-mobile-example
+
+![rho-mobile-1](https://github.com/reinteractive-open/rho-example/raw/feature/example-01-hello-world/screen_shots/Screen%20Shot%202012-08-01%20at%205.20.09%20AM.png)
+
+![rho-mobile-2](https://github.com/reinteractive-open/rho-example/raw/feature/example-01-hello-world/screen_shots/Screen%20Shot%202012-08-01%20at%205.20.28%20AM.png)
+
+![rho-mobile-3](https://github.com/reinteractive-open/rho-example/raw/feature/example-01-hello-world/screen_shots/Screen%20Shot%202012-08-01%20at%205.20.40%20AM.png)
+
+![rho-mobile-4](https://github.com/reinteractive-open/rho-example/raw/feature/example-01-hello-world/screen_shots/Screen%20Shot%202012-08-01%20at%205.20.52%20AM.png)
+
+![rho-mobile-5](https://github.com/reinteractive-open/rho-example/raw/feature/example-01-hello-world/screen_shots/Screen%20Shot%202012-08-01%20at%205.21.04%20AM.png)
+
+![rho-mobile-6](https://github.com/reinteractive-open/rho-example/raw/feature/example-01-hello-world/screen_shots/Screen%20Shot%202012-08-01%20at%205.21.13%20AM.png)
+
 
