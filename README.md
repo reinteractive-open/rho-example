@@ -16,6 +16,13 @@ This branch does the absolute basics.  It allows you to manage Products.  The au
 
 ## Setup
 
+### Prerequisites
+
+This work has been done on Ruby 1.9.3-p125.  We suggest you use a version of ruby close to that for best results
+
+There are .rbenv files for people using <https://github.com/sstephenson/rbenv/>
+
+
 ### Install Rho
 
 		#!/bin/bash
