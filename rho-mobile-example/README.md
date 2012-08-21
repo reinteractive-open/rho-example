@@ -36,6 +36,10 @@ If you get something like this back:
 
 Simply add iphonesimulator4.3 to build.yml and restart (#TODO lame - figure out why 5.0 isn't installing, has to do with xcode install I think - which takes way to long to fix right now)
 
+## development
+
+When you make a change you anything rho-mobile-example you need to command-q quit the app and restart it.
+
 ## setting this project up from scratch (or how we got to what's in this project right now)
 
 Create app/model
@@ -48,7 +52,7 @@ Uncomment sync line in app/Product/product.rb
 		# Uncomment the following line to enable sync with Product.
   	enable :sync
 
-Set sync/connect server
+Set sync/connect server in rhoconfig.txt
 
 		# sync server url, typically this will look like 'http://<hostname>:<port>/application'
 		# for example: 'http://localhost:9292/application
