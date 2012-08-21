@@ -63,6 +63,21 @@ There are .rbenv files for people using <https://github.com/sstephenson/rbenv/>
 * Follow README.md for rho-rails-example
 * Follow README.md for rho-mobile-example
 
+## Run it!
+
+be = bundle exec
+
+		cd rho-connect-example
+		be rhoconnect start 
+		be rhoconnect web
+
+		cd rho-rails-example
+		be rails s
+
+		cd rho-mobile-example
+		rake run:iphone
+		tail -f rholog.txt
+
 ## If everything goes well you should have…
 
 ### rho-connect-example
